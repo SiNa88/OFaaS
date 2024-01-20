@@ -86,7 +86,7 @@ Then, I used the following commands to install the OFaaS on Ubuntu 20.04, runnin
   
   ```faas-cli template store list```
 
-## Port forwarding to set up the openfaas
+## Port forwarding to have function invocation
   ```kubectl port-forward -n openfaas svc/gateway 8080:8080```
 
   ```PASSWORD=$(kubectl get secret -n openfaas basic-auth -o jsonpath="{.data.basic-auth-password}" | base64 --decode; echo)```
