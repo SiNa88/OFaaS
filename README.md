@@ -56,7 +56,6 @@ Then, I used the following commands to install the OFaaS on Ubuntu 20.04, runnin
   
   ```docker stop kind-registry && docker rm kind-registry```
   
-  
   ```kubectl config current-context```
   
   ```curl -Lo ./kind "https://kind.sigs.k8s.io/dl/v0.18.0/kind-$(uname)-amd64"```
@@ -87,6 +86,7 @@ Then, I used the following commands to install the OFaaS on Ubuntu 20.04, runnin
   
   ```faas-cli template store list```
 
+## Port forwarding to set up the openfaas
   ```kubectl port-forward -n openfaas svc/gateway 8080:8080```
 
   ```PASSWORD=$(kubectl get secret -n openfaas basic-auth -o jsonpath="{.data.basic-auth-password}" | base64 --decode; echo)```
@@ -128,7 +128,6 @@ Then, I used the following commands to install the OFaaS on Ubuntu 20.04, runnin
   ```kubectl delete pods -n openfaas-fn hello-python-598c869b9d-mt2f8 --force```
   
   ```kubectl get events \
-
-  --sort-by=.metadata.creationTimestamp \
+    --sort-by=.metadata.creationTimestamp \
     -n openfaas-fn \
     --watch```
