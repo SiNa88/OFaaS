@@ -132,7 +132,7 @@ Then, I used the following commands to install the OFaaS on Ubuntu 20.04, runnin
 
 ## An example
 
-[Step-1: commands](https://github.com/SiNa88/sina88.github.io/blob/main/openfaas/Step_0_0.jpg) and [Step-2: GUI](https://github.com/SiNa88/sina88.github.io/blob/main/openfaas/Step_0_1.jpg)
+[Step-1: commands](https://sina88.github.io/openfaas/Step_0_0.jpg) and [Step-2: GUI](https://sina88.github.io/openfaas/Step_0_1.jpg)
 
 
 
