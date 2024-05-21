@@ -128,3 +128,12 @@ Then, I used the following commands to install the OFaaS on Ubuntu 20.04, runnin
   ```kubectl delete pods -n openfaas-fn hello-python-598c869b9d-mt2f8 --force```
   
   ```kubectl get events --sort-by=.metadata.creationTimestamp -n openfaas-fn --watch```
+
+
+## An example
+
+[Step-1](https://github.com/SiNa88/sina88.github.io/blob/main/openfaas/Step_0_0.jpg) and [Step-2](https://github.com/SiNa88/sina88.github.io/blob/main/openfaas/Step_0_1.jpg)
+
+
+
+   
